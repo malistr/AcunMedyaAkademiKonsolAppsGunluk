@@ -1,0 +1,14 @@
+C:\Users\ASUS\source\repos\Gunluk\Gunluk.ConsoleApp\bin\Debug\net7.0\Gunluk.ConsoleApp.exe
+C:\Users\ASUS\source\repos\Gunluk\Gunluk.ConsoleApp\bin\Debug\net7.0\Gunluk.ConsoleApp.deps.json
+C:\Users\ASUS\source\repos\Gunluk\Gunluk.ConsoleApp\bin\Debug\net7.0\Gunluk.ConsoleApp.runtimeconfig.json
+C:\Users\ASUS\source\repos\Gunluk\Gunluk.ConsoleApp\bin\Debug\net7.0\Gunluk.ConsoleApp.dll
+C:\Users\ASUS\source\repos\Gunluk\Gunluk.ConsoleApp\bin\Debug\net7.0\Gunluk.ConsoleApp.pdb
+C:\Users\ASUS\source\repos\Gunluk\Gunluk.ConsoleApp\obj\Debug\net7.0\Gunluk.ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\source\repos\Gunluk\Gunluk.ConsoleApp\obj\Debug\net7.0\Gunluk.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\ASUS\source\repos\Gunluk\Gunluk.ConsoleApp\obj\Debug\net7.0\Gunluk.ConsoleApp.AssemblyInfo.cs
+C:\Users\ASUS\source\repos\Gunluk\Gunluk.ConsoleApp\obj\Debug\net7.0\Gunluk.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\Gunluk\Gunluk.ConsoleApp\obj\Debug\net7.0\Gunluk.ConsoleApp.dll
+C:\Users\ASUS\source\repos\Gunluk\Gunluk.ConsoleApp\obj\Debug\net7.0\refint\Gunluk.ConsoleApp.dll
+C:\Users\ASUS\source\repos\Gunluk\Gunluk.ConsoleApp\obj\Debug\net7.0\Gunluk.ConsoleApp.pdb
+C:\Users\ASUS\source\repos\Gunluk\Gunluk.ConsoleApp\obj\Debug\net7.0\Gunluk.ConsoleApp.genruntimeconfig.cache
+C:\Users\ASUS\source\repos\Gunluk\Gunluk.ConsoleApp\obj\Debug\net7.0\ref\Gunluk.ConsoleApp.dll
