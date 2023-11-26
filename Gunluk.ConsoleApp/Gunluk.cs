@@ -8,9 +8,10 @@ namespace Gunluk.ConsoleApp
 {
     public class Gunluk
     {
-       
+        public string Baslik { get; set; }
         public string Metin { get; set; }
         public DateTime Tarih { get; set; }= DateTime.Now;
+        public bool IlkMi { get; set; } = true;
 
     }
 }
