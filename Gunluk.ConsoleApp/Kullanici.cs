@@ -13,6 +13,28 @@ namespace Gunluk.ConsoleApp
         public DateTime OlusturulmaTarihi { get; set; } = DateTime.Now;
         public string SifreHash { get; set; } // Şifrelerin güvenli bir şekilde saklanması için hash kullanılmalıdır.
 
+      
+        public static void TxtKaydet(List<Kullanici> kullanicilar)
+        {
+
+
+            using (StreamWriter writer = new StreamWriter("C:\\kullanicilar\\kullanicilar.txt", true))
+            {
+                foreach (var kullanici in kullanicilar)
+                {
+                    writer.Write($"*AdSoyad: {kullanici.KullaniciAdi}*, *Tarih: {kullanici.OlusturulmaTarihi}*, Sifre: {kullanici.SifreHash}");
+
+                }
+            }
+
+            Console.WriteLine("Günlük başarıyla dosyaya kaydedildi.");
+            Thread.Sleep(1500);
+            Console.Clear();
+
+        }
+
+
+
         public static void KullaniciMenu(List<Kullanici> kullanicilar, List<Gunluk> gunlukler)
         {
             Console.WriteLine("Yapmak İstediğiniz İşlemi Seçin\n1.Kayıt Ol\n2.Giriş Yap\n3.Çıkış\n");
@@ -22,6 +44,7 @@ namespace Gunluk.ConsoleApp
             if (secim.Key == ConsoleKey.D1)
             {
                 KayitOl(kullanicilar, gunlukler);
+                TxtKaydet(kullanicilar);
                
             }
             else if (secim.Key == ConsoleKey.D2)
@@ -74,7 +97,7 @@ namespace Gunluk.ConsoleApp
             {
                 Console.WriteLine("Giriş Başarılı");
 
-                Metot.GunlukMenu(gunlukler);
+               
             }
             else
             {
@@ -89,9 +112,7 @@ namespace Gunluk.ConsoleApp
 
         private static string HashSifre(string sifre)
         {
-            // Şifreleme algoritmasını buraya ekleyin (örneğin, SHA-256).
-            // Gerçek uygulamalarda, şifrelerin düz metin olarak saklanmaması önemlidir.
-            // Bu örnekte şifrelerin güvenli bir şekilde saklandığını varsayıyoruz.
+            
             return sifre;
         }
     }

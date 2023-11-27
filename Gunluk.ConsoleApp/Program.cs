@@ -6,8 +6,9 @@
        
         static void Main(string[] args)
         {
+          
 
-            
+
 
             List<Kullanici> kullanicilar = new List<Kullanici>();
             List<Gunluk> gunlukler = new List<Gunluk>();
