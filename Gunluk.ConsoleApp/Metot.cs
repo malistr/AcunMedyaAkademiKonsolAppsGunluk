@@ -20,6 +20,7 @@ namespace Gunluk.ConsoleApp
                 satir = reader.ReadLine();
             }
         }
+
         static void TxtKaydet(List<Gunluk> gunlukler)
         {
 
@@ -27,8 +28,7 @@ namespace Gunluk.ConsoleApp
             using (StreamWriter writer = new StreamWriter("C:\\günlük\\günlük.txt", true))
             {
                 foreach (var gunluk in gunlukler)
-                {
-                    
+                {                    
                     writer.Write($"*Başlık: {gunluk.Baslik}*, *Tarih: {gunluk.Tarih}*, Metin: {gunluk.Metin}");
 
                 }
@@ -40,8 +40,7 @@ namespace Gunluk.ConsoleApp
 
         }
 
-      
-
+ 
             public static void KayitEkle(List<Gunluk> gunlukler)
         {
             Console.WriteLine("\nGünlük Başlığı:");
@@ -91,7 +90,7 @@ namespace Gunluk.ConsoleApp
                 }
                 else
                 {
-                     Menu(gunlukler);
+                     GunlukMenu(gunlukler);
                      Console.Clear();
                 }
                
@@ -99,8 +98,10 @@ namespace Gunluk.ConsoleApp
 
 
         }
-        public static void Menu(List<Gunluk> gunlukler)
+       
+        public static void GunlukMenu(List<Gunluk> gunlukler)
         {
+          
            
             Console.WriteLine("Yapmak İstediğiniz İşlemi Seçin\n1.Kayıt ekle\n2.Kayıtları Listele\n3.Kayıtları Sil\n4.Txt Kaydet\n5.Txt OKu\n6.Çıkış\n");
             ConsoleKeyInfo secim = Console.ReadKey();
@@ -127,6 +128,7 @@ namespace Gunluk.ConsoleApp
             }
             else if (secim.Key == ConsoleKey.D6)
             {
+               
                 Console.WriteLine("Çıkış Yapılıyor...");
                 Thread.Sleep(2000);
                 Environment.Exit(0);
